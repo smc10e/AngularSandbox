@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+table{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 15px;
+    padding: 0px;
+}
+
+ul#navBarCentered{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#navBarCentered li{
+    display: inline;
+}
+
+ul#navBarCentered a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul#navBarCentered a:hover, a:active {
+    background-color: orangered;
+}
+
+a{
+    text-decoration: underline/none;
+    color: blue;
+    font-weight: bold/normal;
+}
+a:visited{
+    text-decoration: underline/none;
+    color: green;
+    font-weight: bold/normal;
+}
+.navBar{
+    width: auto;
+    height: 100px;
+    background-color: firebrick;
+    text-align: center;
+}
+
+.navList{
+    padding-top: 10px;
+    width: auto;
+    display: table;
+    margin: 0 auto;
+}
