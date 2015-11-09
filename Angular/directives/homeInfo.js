@@ -5,8 +5,7 @@ app.directive('homeInfo', function(){
     return{
         restrict: 'E',
         scope: {
-            title: '@',
-            info: '='
+            title: '@'
         },
         templateUrl: 'directives/homeInfo.html'
     };

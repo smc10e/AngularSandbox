@@ -1,13 +1,13 @@
 /**
  * Created by smcampbell on 11/5/2015.
  */
-app.directive('page2Info', function(){
+app.directive('photosInfo', function(){
     return{
         restrict: 'E',
         scope: {
             title: '@',
             info: '='
         },
-        templateUrl: 'directives/page2Info.html'
+        templateUrl: 'directives/photosInfo.html'
     };
 });

@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 
 div{
@@ -58,14 +59,65 @@ a:visited{
 }
 .navBar{
     width: auto;
-    height: 100px;
+    height: 75px;
     background-color: firebrick;
     text-align: center;
 }
 
 .navList{
-    padding-top: 10px;
+    padding-top: 20px;
     width: auto;
     display: table;
     margin: 0 auto;
+}
+
+.header{
+    width: auto;
+    height: 85px;
+    background-color: white;
+    position: relative;
+}
+
+.header span{
+    text-transform: uppercase;
+    font-size: large;
+    font-family: "Lucida Console";
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.header img{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+
+.content{
+    border: dashed;
+    border-color: blue;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.page-wrap{
+    text-align: left;
+    width: 950px;
+    position: relative;
+    margin: 0 auto;
+    border: solid;
+}
+
+.main{
+    width: 690px;
+    float: left;
+    border: solid;
+    border-color: green;
+}
+
+.sidebar{
+    width: 200px;
+    height: 500px;
+    border: dashed;
+    float: right;
 }

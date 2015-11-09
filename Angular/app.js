@@ -9,9 +9,17 @@ app.config(function($routeProvider){
            templateUrl: 'views/home.html',
            controller: 'HomeController'
        })
-       .when('/page2', {
-           templateUrl: 'views/page2.html',
-           controller: 'HomeController'
+       .when('/photos', {
+           templateUrl: 'views/photos.html',
+           controller: 'PhotosController'
+       })
+       .when('/projects', {
+           templateUrl: 'views/projects.html',
+           controller: 'ProjectsController'
+       })
+       .when('/contact', {
+           templateUrl: 'views/contact.html',
+           controller: 'ContactController'
        })
        .otherwise({
            redirectTo:'/'
