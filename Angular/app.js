@@ -1,7 +1,7 @@
 /**
  * Created by smcampbell on 11/5/2015.
  */
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute', 'sticky']);
 
 app.config(function($routeProvider){
    $routeProvider

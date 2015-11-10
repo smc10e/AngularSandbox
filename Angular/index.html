@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+<link href="css/Header.css" rel="stylesheet" type="text/css">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Angular App</title>
-    <link href="css/Header.css" rel="stylesheet" type="text/css">
+
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 
     <!-- Include the AngularJS routing library -->
@@ -11,22 +12,28 @@
 </head>
 <body ng-app="myApp">
     <div class="page-wrap">
-        <div class="header">
+        <header>
             <a href="#/"><img src="content/generic-profile.png"></a>
             <span>Sean Campbell | Software Engineer</span>
-        </div>
-        <div class="navBar">
-            <div class="navList">
-                <ul id="navBarCentered">
-                    <li><a href="#/">About Me</a></li>
-                    <li><a href="#/photos">Photos</a></li>
-                    <li><a href="#/projects">Personal Projects</a></li>
-                    <li><a href="#/contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-        <div ng-view></div>
+        </header>
+        <nav class="navBar" sticky>
+            <a href="#/">About Me</a>
+            <a href="#/photos">Photos</a>
+            <a href="#/projects">Personal Projects</a>
+            <a href="#/contact">Contact Me</a>
+        </nav>
+        <div ng-view class="content">
+        <div id="footer"></div>
     </div>
+</body>
+<!-- <body ng-app="myApp"> -->
+<!--    <div ng-app="myApp" class="page-wrap">
+
+
+
+        &lt;!&ndash;</div>&ndash;&gt;
+        <div id="footer"></div>
+    </div>-->
 
 
     <!--MODULE -->
@@ -41,6 +48,7 @@
     <!--Directives -->
     <script src="directives/homeInfo.js"></script>
     <script src="directives/photosInfo.js"></script>
+    <script src="directives/sticky.js"></script>
 
-</body>
+<!-- </body> -->
 </html>
