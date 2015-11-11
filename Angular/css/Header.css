@@ -1,20 +1,30 @@
+html{
+    background-color: lightgray;
+}
 body{
     text-align: center;
-    border: solid;
     margin: 0;
-    padding-top: 250px;
+    padding-top: 150px;
 }
 header{
-    height: 250px;
-    padding-top: 50px;
-    background: lightgreen;
-}
-
-header,
-.nav-scolled{
+    height: 150px;
+    background: darkslategray;
     position: fixed;
     width: 950px;
     top: 0;
+}
+
+header span{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: x-large;
+}
+
+header a{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
 }
 
 .navBar {
@@ -23,8 +33,8 @@ header,
     background-color: firebrick;
     text-align: center;
     position: relative;
-    margin-bottom: -80px;
     z-index: 150;
+    box-shadow: 2px 10px 2px -4px gray;
 }
 
 .navBar a{
@@ -32,7 +42,8 @@ header,
     text-align: center;
     text-decoration: none;
     width: 120px;
-    padding: 4px;
+    margin-top: 15px;
+    padding-left: 20px;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -43,10 +54,8 @@ header,
 }
 
 .content{
-    background: #f2f2e8;
-    border: dashed;
-    border-color: blue;
-    height: 1200px;
+    background: white;
+    height: 1500px;
     width: auto;
     position:relative;
 }
@@ -56,17 +65,35 @@ header,
     width: 950px;
     position: relative;
     margin: 0 auto;
-    border: dashed;
 }
 
 .main{
     width: 690px;
-    height: 517px;
+    height: 1382px;
     float: left;
-    border: solid;
-    border-color: green;
     position:relative;
+    margin-top: 25px;
+    margin-left: 10px;
+    text-align: center;
+    background-image: url("../content/bulletin_background.jpg");
+    border-radius: 8px;
+}
+
+.main p{
+    position: relative;
+    margin-left: 45px;
     margin-top: 50px;
+    margin-right:45px;
+    font-size: large;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+.main h1{
+    position: relative;
+    margin-top: 50px;
+    font-family: "Impact";
 }
 
 .sidebar{
@@ -75,15 +102,10 @@ header,
     border: dashed;
     float: right;
     position:relative;
+    margin-top: 25px;
+    margin-right: 10px;
 }
 
-.man {
-    background: #f2f2e8;
-    padding: 110px 50px 50px;
-    column-count: 2;
-    column-gap: 40px;
-    position: relative;
-}
 
 #footer{
     height: 60px;
