@@ -82,7 +82,6 @@ header a{
 .main p{
     position: relative;
     margin-left: 45px;
-    margin-top: 50px;
     margin-right:45px;
     font-size: large;
     line-height: 25px;
@@ -96,6 +95,19 @@ header a{
     font-family: "Impact";
 }
 
+.main h2{
+    text-align: justify;
+    margin-left:45px;
+}
+
+.main ul li{
+    margin-right:45px;
+    margin-left:45px;
+    text-align: justify;
+    font-size: large;
+    line-height: 25px;
+}
+
 .sidebar{
     width: 200px;
     height: 500px;
@@ -106,8 +118,15 @@ header a{
     margin-right: 10px;
 }
 
+#closing{
+    text-align: center;
+}
 
 #footer{
     height: 60px;
-    background-color: slategray;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 25px;
 }
