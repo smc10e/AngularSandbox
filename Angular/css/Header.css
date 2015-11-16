@@ -111,16 +111,55 @@ header a{
 .sidebar{
     width: 200px;
     height: 500px;
-    border: dashed;
     float: right;
     position:relative;
     margin-top: 25px;
     margin-right: 10px;
+    text-align: center;
+    font-family: "Impact";
 }
+
+.sidebar a img{
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
 
 #closing{
     text-align: center;
 }
+
+#photos{
+    width: 670px;
+    height: 1372px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.photo_info{
+    padding-top: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.photo img{
+    max-width:100%;
+    max-height:100%;
+    min-height:75%;
+}
+
+
 
 #footer{
     height: 60px;
@@ -129,4 +168,33 @@ header a{
     text-align: center;
     padding-top: 30px;
     line-height: 25px;
+}
+
+.modal {
+    /* A dark translucent div that covers the whole screen */
+    position:absolute;
+    z-index:999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+.big-pic{
+    z-index:10000;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    opacity: 1;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 20%;
+    left: 30%;
+}
+
+.big-pic img{
+    max-height: 100%;
+    max-width: 100%;
 }

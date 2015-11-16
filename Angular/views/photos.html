@@ -1,3 +1,27 @@
 <div ng-controller="PhotosController">
-        <photos-info title={{title}}></photos-info>
+    <div>
+        <div class="modal" ng-show="{{show}}">
+            <div class="big-pic">
+                <img src="content/zion1.jpg">
+                <button>Close</button>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Photos</h1>
+            <div id="photos">
+                <div ng-repeat="photo in photos" class="photo_info" >
+                    <div class="photo">
+                        <photos-info info="photo" show-fn="togglePic()"></photos-info>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2>Connect with me!</h2>
+            <a href="https://www.linkedin.com/in/sean-campbell-31977559" target="_blank"><img src="content/linkedin-logo.png"></a>
+            <a href="https://github.com/smc10e" target="_blank"><img src="content/GH-icon.svg"></a>
+            <a href="https://www.facebook.com/sean.campbell.7946" target="_blank"><img src="content/fb-logo.png"></a>
+            <a href="https://www.instagram.com/sm_campbell91/" target="_blank"><img src="content/ig-logo.png"></a>
+        </div>
+    </div>
 </div>

@@ -6,7 +6,8 @@ app.directive('photosInfo', function(){
         restrict: 'E',
         scope: {
             title: '@',
-            info: '='
+            info: '=',
+            showFn: '&'
         },
         templateUrl: 'directives/photosInfo.html'
     };
