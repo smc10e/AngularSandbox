@@ -4,11 +4,7 @@
 app.directive('photosInfo', function(){
     return{
         restrict: 'E',
-        scope: {
-            title: '@',
-            info: '=',
-            showFn: '&'
-        },
+        scope: false,
         templateUrl: 'directives/photosInfo.html'
-    };
+    }
 });

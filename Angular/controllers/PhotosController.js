@@ -3,35 +3,42 @@
  */
 app.controller('PhotosController', ['$scope', function($scope){
     $scope.title = "Photos";
-    $scope.show = "false";
+    $scope.display = "";
+    $scope.popupsrc = "";
     $scope.photos = [
         {
-            name: 'Not afraid of the farmer look',
+            description: 'Not afraid of the farmer look',
             src: 'content/pic1.jpg'
         },
         {
-            name: 'One of the best people in the world',
+            description: 'One of the best people in the world',
             src: 'content/pic2.jpg'
         },
         {
-            name: 'Best friend through and through',
+            description: 'Best friend through and through',
             src: 'content/pic3.jpg'
         },
         {
-            name: 'Caught off guard',
+            description: 'Caught off guard',
             src: 'content/pic4.jpg'
         },
         {
-            name: 'Conquering the Grand Canyon',
+            description: 'Conquering the Grand Canyon',
             src: 'content/pic5.jpg'
         },
         {
-            name: 'Zion National Park',
+            description: 'Zion National Park',
             src: 'content/zion1.jpg'
         }
     ];
-    $scope.togglePic = function($scope){
-        $scope.show = true;
-
-    }
+    $scope.showFn = function(src){
+        if($scope.display === "true"){
+            $scope.display = "false";
+            $scope.popupsrc = "";
+        }
+        else{
+            $scope.display = "true";
+            $scope.popupsrc = src;
+        }
+    };
 }]);

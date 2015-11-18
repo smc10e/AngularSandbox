@@ -1,9 +1,9 @@
 <div ng-controller="PhotosController">
     <div>
-        <div class="modal" ng-show="{{show}}">
+        <div class="modal" ng-show="display">
             <div class="big-pic">
-                <img src="content/zion1.jpg">
-                <button>Close</button>
+                <img ng-src="{{popupsrc}}">
+                <button ng-click="display=!display">Close</button>
             </div>
         </div>
         <div class="main">
@@ -11,7 +11,7 @@
             <div id="photos">
                 <div ng-repeat="photo in photos" class="photo_info" >
                     <div class="photo">
-                        <photos-info info="photo" show-fn="togglePic()"></photos-info>
+                        <photos-info></photos-info>
                     </div>
                 </div>
             </div>
