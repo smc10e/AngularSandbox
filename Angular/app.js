@@ -17,9 +17,9 @@ app.config(function($routeProvider){
            templateUrl: 'views/projects.html',
            controller: 'ProjectsController'
        })
-       .when('/contact', {
-           templateUrl: 'views/contact.html',
-           controller: 'ContactController'
+       .when('/resume', {
+           templateUrl: 'views/resume.html',
+           controller: 'ResumeController'
        })
        .otherwise({
            redirectTo:'/'

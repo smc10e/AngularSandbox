@@ -1,27 +1,20 @@
 <div ng-controller="PhotosController">
-    <div>
-        <div class="modal" ng-show="display">
-            <div class="big-pic">
-                <img ng-src="{{popupsrc}}">
-                <button ng-click="display=!display">Close</button>
-            </div>
+    <div class="modal" ng-show="display">
+        <div class="big-pic">
+            <img ng-src="{{popupsrc}}">
+            <button style="cursor: pointer" ng-click="display=!display">Close</button>
         </div>
-        <div class="main">
-            <h1>Photos</h1>
-            <div id="photos">
-                <div ng-repeat="photo in photos" class="photo_info" >
-                    <div class="photo">
-                        <photos-info></photos-info>
-                    </div>
+    </div>
+    <div class="main">
+        <h1>Photos</h1>
+        <div id="photos">
+            <div ng-repeat="photo in photos" class="photo_info" >
+                <div class="photo">
+                    <photos-info></photos-info>
                 </div>
             </div>
-        </div>
-        <div class="sidebar">
-            <h2>Connect with me!</h2>
-            <a href="https://www.linkedin.com/in/sean-campbell-31977559" target="_blank"><img src="content/linkedin-logo.png"></a>
-            <a href="https://github.com/smc10e" target="_blank"><img src="content/GH-icon.svg"></a>
-            <a href="https://www.facebook.com/sean.campbell.7946" target="_blank"><img src="content/fb-logo.png"></a>
-            <a href="https://www.instagram.com/sm_campbell91/" target="_blank"><img src="content/ig-logo.png"></a>
+            </br>
+            Check out some other pictures of me using the links on the right!
         </div>
     </div>
 </div>

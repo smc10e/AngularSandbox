@@ -20,9 +20,18 @@
             <a href="#/">About Me</a>
             <a href="#/photos">Photos</a>
             <a href="#/projects">Personal Projects</a>
-            <a href="#/contact">Contact Me</a>
+            <a href="#/resume">Resume</a>
         </nav>
-        <div ng-view class="content"></div>
+        <div class="content">
+            <div ng-view></div>
+            <div class="sidebar">
+                <h2>Connect with me!</h2>
+                <a href="https://www.linkedin.com/in/sean-campbell-31977559" target="_blank"><img src="content/linkedin-logo.png"></a>
+                <a href="https://github.com/smc10e" target="_blank"><img src="content/GH-icon.svg"></a>
+                <a href="https://www.facebook.com/sean.campbell.7946" target="_blank"><img src="content/fb-logo.png"></a>
+                <a href="https://www.instagram.com/sm_campbell91/" target="_blank"><img src="content/ig-logo.png"></a>
+            </div>
+        </div>
         <div id="footer">This is my personal site used to improve my AngularJS, HTML, and CSS skills</br>Updated November 2015</div>
     </div>
 </body>
@@ -33,7 +42,7 @@
     <!--Controllers -->
     <script src="controllers/HomeController.js"></script>
     <script src="controllers/ProjectsController.js"></script>
-    <script src="controllers/ContactController.js"></script>
+    <script src="controllers/ResumeController.js"></script>
     <script src="controllers/PhotosController.js"></script>
 
     <!--Directives -->
