@@ -1,0 +1,48 @@
+<div ng-controller="ProjectsController">
+    <div class="main">
+        <h1>{{title}}</h1>
+        <p>Here is a list of some of the personal projects I have undertaken. The best part about being a developer to me is
+        being able to do pretty much anything when you have the right tools. All of these were meant to build my toolbox and
+        grow my knowledge and understanding of the languages and technologies involved. One thing I can say with certainty is
+        that each and every one of them has made me a better developer all around. Each project has made me realize just how
+        deep each of these technologies go and the versatility they provide a developer.</p>
+        <div id="projects">
+            <a href="https://github.com/smc10e/AngularSandbox" target="_blank"><h2>Personal Website</h2></a>
+            <h3>AngularJS, HTML, CSS</h3>
+            <p>
+                This project is actually this website. I wanted to learn AngularJS and get better at writing and using HTML and CSS
+                so I knew I need to actually make a site to gain any real experience. I had always wanted to build a personal site
+                without going through a third party and decided this was a great chance to do so. I chose AngularJS because I had
+                read a little about it here and there and at one point in time had applied for a job that was looking for someone
+                who had experience with it. This has been one of the most fun projects I've undertaken and has expanded my
+                web development knowledge.
+            </p>
+            <a href="https://github.com/smc10e/Network-Monitor" target="_blank"><h2>Network Monitor</h2></a>
+            <h3>Java, Swing</h3>
+            <p>
+                When I first thought about doing this project I imagined it would take a lot more work to accomplish the final goal.
+                In reality it was easier but still taught me a few things. The main part of this project required a simple command
+                to the command console to get what the current network information was. I was aware that this was possible within Java
+                but had not done it previously. Once I got this working it was simple matter of putting it in a loop to always get the
+                current value. At this point everything is going to the console within IntelliJ IDE. I decided I wanted to create a GUI
+                interface for it in order to keep up the little bit of Swing skill I had. For whatever reason implementing the GUI
+                was the most rewarding aspect since it was a little finicky with some things. In the end I accomplised my goal and
+                picked up a few extra skills as well.
+            </p>
+            <a href="https://github.com/smc10e/HighwaySystem" target="_blank"><h2>Highway System</h2></a>
+            <h3>Java, Swing</h3>
+            <p>
+                I had a lot of fun creating this project. I originally started out just making a car object and playing around with its
+                properties to keep up my basic OO skills. From there I thought about having a road with multiple static cars, but
+                decided to take it a step further and make a whole highway with multiple lanes of moving cars. The a challenging part was
+                trying to pick the best container to hold the cars. I eventually went with a HashMap for the highway and a Vector for
+                each lane. The HashMap provided me the ability to map each lane to a number which provided easy key/value linking.
+                Vectors were an efficient solution to the ever changing car positions and allowed for indexes to be found and updated
+                quickly. After this it was a matter of adding cars to the correct lane and making sure they moved through the lane as
+                expected. The last bit of functionality I added was to give the cars different speeds and make it impossible to overlap
+                a car moving at a slower speed. This seemed simple at first but there was the challenge of giving the car the ability
+                to "see" in front of it to know if it had to slow down or not.
+            </p>
+        </div>
+    </div>
+</div>
