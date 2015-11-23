@@ -234,3 +234,10 @@ header a{
     line-height: 30px;
 }
 
+#projects p{
+    font-size: medium;
+}
+
+#projects h2{
+    line-height: 10px;
+}
