@@ -3,12 +3,4 @@
  */
 app.controller('HomeController', ['$scope', function($scope){
     $scope.title = "Home Page";
-    $scope.list = [
-        {
-            name: 'My Name'
-        },
-        {
-            name: 'Your Name'
-        }
-    ];
 }]);
